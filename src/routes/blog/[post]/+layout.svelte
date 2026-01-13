@@ -9,14 +9,14 @@
 
  <!-- The sidebar -->
  <div class="sidebar">
+    <a href="../../"><b>Home</b></a>
   <b>Recent Posts</b>
-    <a href="../../">Home</a>
     {#each data.posts as post, i}
-      <a href="blog.{post.slug}">{post.title}
+      <a href="{post.slug}"><b>{post.title}</b>
       <br />
       Date: {new Date(post.datePosted).toLocaleDateString('en-us', { month:"long", day: "numeric", year:"numeric" } )}<br />
       Author: {post.author}<br />
-      <p>{post.summary}</p></a>
+      <i>{post.summary}</i></a>
   	{/each}
 
     <!-- <Sidebarlist /> -->

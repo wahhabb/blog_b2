@@ -2,9 +2,8 @@
 <script>
 	let { data } = $props();
 
-	const { title, summary, datePosted, author } =
-		data.meta;
-	const { PostContent } = data;
+	const { title, summary, datePosted, author } = $derived(data.meta);
+	const { PostContent } = $derived(data);
 </script>
 
 <svelte:head>

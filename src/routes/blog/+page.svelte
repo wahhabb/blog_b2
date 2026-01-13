@@ -1,11 +1,12 @@
 <script>
     let { data } = $props();
+    let posts = $derived(data.posts)
  </script>
 
 <h1>Welcome to My Blog</h1>
 
 <ul>
-	{#each data.posts as post, i}
+	{#each posts as post, i}
 		<li class="article" style="border-radius:2em;">
 			<article>
 					<h2>
