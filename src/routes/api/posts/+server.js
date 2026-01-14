@@ -1,6 +1,6 @@
 
 import { json } from '@sveltejs/kit';
-console.log('In routes/api/posts/+server.js')
+
 let cachedPosts = null;
 
 async function getPosts() {
